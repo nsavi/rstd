@@ -1,4 +1,5 @@
 #Exp-3
+#correlation and regression
 data=cars 
 data
 summary(data)
@@ -24,6 +25,7 @@ abline(regression2)
 summary(regression2)
 #-----------------------------------------------------
 ##Exp-2
+#plotting visualising data and tabulation
 empid=c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15) 
 empid
 age=c(30,37,45,32,50,60,35,32,34,43,32,30,43,50,60) 
