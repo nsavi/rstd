@@ -24,6 +24,8 @@ regression2
 abline(regression2)
 summary(regression2)
 #-----------------------------------------------------
+
+
 ##Exp-2
 #plotting visualising data and tabulation
 empid=c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15) 
@@ -71,6 +73,8 @@ cor(weight,bmi)
 mode1<-lm(bmi~weight) 
 summary.lm(mode1)
 #----------------------------------------------------------------------------------
+
+
 Exp-6
 #poissson
 m=20
@@ -96,6 +100,8 @@ Ex1
 Varx1=weighted.mean(x1*x1,px1)-(weighted.mean(x1 ,px1))^2
 Varx1
 #---------------------------------------------------------------------------------------
+
+
 #normal distribution
 x=seq(0,40)
 x
@@ -124,6 +130,8 @@ y3
 polygon(c(15,x3,25),c(0,y3,0),col='green')
 data.frame(p1,p2,p3)
 ------------------------------------------------------------------------------------------------
+
+
 EXP-7-large sample mean test
 xbar=14.6
 xbar
@@ -145,6 +153,8 @@ pval
 if(pval>alpha){print("Accept Null hypothesis")} else{print("Reject Null 
 hypothesis")}
 #----------------------------------------------------------------------------------------------------
+
+
 large sample proportion test
 n=640
 n
@@ -162,6 +172,8 @@ Sprop+c(-E,E)*sqrt(Pprop*(1-Pprop)/n)
 if(z>-E && z<E){print("Hospital is not efficient")} else{print("Hospital is 
 efficient")}
 ------------------------------------------------------------------------------------------------------------
+
+
 Exp--8
 Two sample mean test
 xbar=20
@@ -183,6 +195,8 @@ zalpha
 if(z<=zalpha){print("Accept Null hypothesis")} else{print("Reject Null 
 hypothesis")}
 #-----------------------------------------------------------------------------------------------------------
+
+
 Two sample proportion test
 p1=0.20
 p1
@@ -205,6 +219,8 @@ zalpha
 if(z<=zalpha){print("Accept Null hypothesis")} else{print("Reject Null 
 hypothesis")}
 -----------------------------------------------------------------------------------------------------------
+
+
 Exp-9
 > #Two indep sample sizes of size 8 and 8 contained the following values
 > #sample 1 - 19 - 17 - 15 - 21 - 16 - 18 - 16 - 14
