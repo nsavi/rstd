@@ -1,3 +1,50 @@
+#EXP-1
+
+
+1:10
+## [1] 1 2 3 4 5 6 7 8 9 10
+
+# Assign variable name to the value
+X=10; X<-10; 10->X;
+
+# To combine numeric values into a vector 
+c(1,2,5)
+## [1] 1 2 5
+
+#Arithmetic operations of vectors are performed member wise.
+a = c(1, 3, 5, 7) 
+b = c(2, 4, 6, 8)
+#addition
+a+b
+## [1] 3 7 11 15
+
+#subtraction
+a-b
+## [1] -1 -1 -1 -1
+
+#constant multiplication
+5*a 
+## [1] 5 15 25 35
+
+#product
+a*b
+## [1] 2 12 30 56
+
+#division
+a/b
+## [1] 0.5000000 0.7500000 0.8333333 0.8750000
+
+# character object is used to represent string values in R
+X=as.character(5.2)
+X
+## [1] "5.2"
+
+#Concatenation of strings
+paste("Baa", "Baa", "Black", "Sheep")
+## [1] "Baa Baa Black Sheep"
+------------------------------------------------------------------------------------
+
+
 #Exp-3
 #correlation and regression
 data=cars 
@@ -75,7 +122,7 @@ summary.lm(mode1)
 #----------------------------------------------------------------------------------
 
 
-Exp-6
+#Exp-6
 #poissson
 m=20
 m
@@ -132,7 +179,7 @@ data.frame(p1,p2,p3)
 ------------------------------------------------------------------------------------------------
 
 
-EXP-7-large sample mean test
+#EXP-7-large sample mean test
 xbar=14.6
 xbar
 mu0=15.4
@@ -155,7 +202,7 @@ hypothesis")}
 #----------------------------------------------------------------------------------------------------
 
 
-large sample proportion test
+#large sample proportion test
 n=640
 n
 Sprop=63/n
@@ -174,7 +221,7 @@ efficient")}
 ------------------------------------------------------------------------------------------------------------
 
 
-Exp--8
+#Exp--8
 Two sample mean test
 xbar=20
 xbar
@@ -197,7 +244,7 @@ hypothesis")}
 #-----------------------------------------------------------------------------------------------------------
 
 
-Two sample proportion test
+#Two sample proportion test
 p1=0.20
 p1
 p2=0.185
@@ -221,18 +268,15 @@ hypothesis")}
 -----------------------------------------------------------------------------------------------------------
 
 
-Exp-9
-> #Two indep sample sizes of size 8 and 8 contained the following values
-> #sample 1 - 19 - 17 - 15 - 21 - 16 - 18 - 16 - 14
-> #sample 2 - 15 - 14 - 15 - 19 - 15 - 18 - 16 - 20
-> #Is the difference btw sample means significant ?
-> #input the data
+#Exp-9
+
 > sample1 = c(19,17,15,21,16,18,16,14)
 > sample2 = c(15,14,15,19,15,18,16,20)
 > sample1
 [1] 19 17 15 21 16 18 16 14
 > sample2
 [1] 15 14 15 19 15 18 16 20
+
 > #output using t-distribution
 > t=t.test(sample1,sample2)
 > t
@@ -260,6 +304,49 @@ mean of x mean of y
 > #conclusion
 > if(cv<=tv){print("Accept H0")} else{print("Reject H0")}
 [1] "Accept H0"
+----------------------------------------------------------------------------------------------
+
+#EXP-10
+
+#PROBLEM-1
+n=5
+alpha=0.05
+N=26
+P=0.5
+x=c(0:n)
+
+obj=c(5,35,75,84,45,12)
+exf=(dbinom(x,n,p)*256
+sum(obj)
+sum(exf)
+chisq-sum((obj.exf)^2/exf)
+     cv=chisq
+     cv
+     
+     tv=qchisq(1-alpha,n-1)
+     tv
+     
+     if(cv<=tv{print("fit is good")}else{print("fit is not good")}
+	
+#PROBLEM-2
+	data=matrix(c(69,51,81,20,35,44),ncol-2,ngrow=T)
+	data
+	l=length(data)
+	l
+	
+	cv=chisq.test(data)
+	cv
+	
+	data:data
+	x-squared=25.629.df=2,p.value=2.721e-06
+	
+	cv=cv$p.value
+	cv
+	
+	alpha=0.05
+	if(cv>alpha){print("attributes are independent")else{print("attributes are dependent")}
+		     
+
 
 
 
