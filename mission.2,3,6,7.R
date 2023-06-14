@@ -120,6 +120,73 @@ cor(weight,bmi)
 mode1<-lm(bmi~weight) 
 summary.lm(mode1)
 #----------------------------------------------------------------------------------
+#EXP-4
+#multiple linear regression model
+#PROBLEM-1
+Y=c(110,80,70,120,150,90,70,120)
+Y
+
+X1=c(30,40,20,50,60,40,20,60)
+X1
+
+X2=c(11,10,7,15,19,12,8,14)
+X2
+
+RegModel=lm(Y~X1+X2)
+RegModel
+
+summary(RegModel)
+
+library(scatterplot3d)
+
+scatterplot3d(Y,X1,X2)
+
+
+
+#PROBLEM-2
+data=mtcars
+data
+
+X=mtcars$mpg
+X
+Y=mtcars$disp
+Y
+Z=mtcars$hp
+Z
+
+RegModel<- lm(Z~X+Y)
+RegModel
+
+summary(RegModel)
+
+library(scatterplot3d)
+graph=scatterplot3d(X,Y,Z)
+graph$plane3d(RegModel)
+-------------------------------------------------------------------------------------
+#EXP-5
+#BINOMIAL DISTRIBUTION
+
+n=4
+n
+p=0.02
+p
+
+dbinom(2,n,p)
+sum(dbinom(2:4,n,p))
+1-pbinom(1,n,p)
+sum(dbinom(0:2,n,p))
+pbinom(2,n,p)
+
+x=0:n
+px=dbinom(x,n,p)
+Ex=weighted.mean(x,px)
+Ex
+
+Varx=weighted.mean(x*x,px)-(weighted.mean(x ,px))^2
+Varx
+plot(x,px,type="h",xlab="values of x",ylab="Probability distribution of 
+x",main="Binomial distribution")
+---------------------------------------------------------------------------------------
 
 
 #Exp-6
