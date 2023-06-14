@@ -59,7 +59,7 @@ covariance
 corr=covariance/(sd(data$speed)*sd(data$dist)) 
 corr
 cor.test(data$speed,data$dist)
-cor.test(data$speed,data$dist,method=”pearson”)
+cor.test(data$speed,data$dist,method="pearson")
 cor.test(data$speed,data$dist,method="spearman")
 plot(data$speed,data$dist)
 regression1=lm(data$speed~data$dist) 
