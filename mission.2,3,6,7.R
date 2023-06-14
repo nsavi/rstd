@@ -289,7 +289,7 @@ efficient")}
 
 
 #Exp--8
-Two sample mean test
+#Two sample mean test
 xbar=20
 xbar
 ybar=15
@@ -336,13 +336,14 @@ hypothesis")}
 
 
 #Exp-9
+#LACK OF SIGNIFICANCE DIFF OF TWO SAMPLE MEANS
 
 > sample1 = c(19,17,15,21,16,18,16,14)
 > sample2 = c(15,14,15,19,15,18,16,20)
 > sample1
-[1] 19 17 15 21 16 18 16 14
+
 > sample2
-[1] 15 14 15 19 15 18 16 20
+
 
 > #output using t-distribution
 > t=t.test(sample1,sample2)
@@ -374,6 +375,7 @@ mean of x mean of y
 ----------------------------------------------------------------------------------------------
 
 #EXP-10
+#CHI SQUARE AND GOODNESS FIT
 
 #PROBLEM-1
 n=5
