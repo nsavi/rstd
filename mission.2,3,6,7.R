@@ -320,31 +320,31 @@ exf=(dbinom(x,n,p)*256
 sum(obj)
 sum(exf)
 chisq-sum((obj.exf)^2/exf)
-     cv=chisq
-     cv
+cv=chisq
+cv
      
-     tv=qchisq(1-alpha,n-1)
+tv=qchisq(1-alpha,n-1)
      tv
      
-     if(cv<=tv{print("fit is good")}else{print("fit is not good")}
+if(cv<=tv{print("fit is good")}else{print("fit is not good")}
 	
 #PROBLEM-2
-	data=matrix(c(69,51,81,20,35,44),ncol-2,ngrow=T)
-	data
-	l=length(data)
-	l
+data=matrix(c(69,51,81,20,35,44),ncol-2,ngrow=T)
+data
+l=length(data)
+l
 	
-	cv=chisq.test(data)
-	cv
+cv=chisq.test(data)
+cv
 	
-	data:data
-	x-squared=25.629.df=2,p.value=2.721e-06
+data:data
+x-squared=25.629.df=2,p.value=2.721e-06
 	
-	cv=cv$p.value
-	cv
+cv=cv$p.value
+cv
 	
-	alpha=0.05
-	if(cv>alpha){print("attributes are independent")else{print("attributes are dependent")}
+alpha=0.05
+if(cv>alpha){print("attributes are independent")else{print("attributes are dependent")}
 		     
 
 
